@@ -6,7 +6,7 @@ A beginner-friendly, responsive Product Showcase frontend built with **React (Vi
 
 ## Live Demo
 
-🔗 [View Live Project](https://your-live-link.com)
+🔗 [View Live Project](https://voyex-product.vercel.app/)
 
 ---
 

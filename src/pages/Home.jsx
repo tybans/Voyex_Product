@@ -31,7 +31,7 @@ const Home = () => {
 
   return (
     <div className="p-4 max-w-6xl mx-auto">
-      <div className="flex justify-between flex-col sm:flex-row gap-4 mb-4">
+      <div className="flex flex-col sm:flex-row gap-4 mb-4">
         <Filter />
         <Sort />
       </div>

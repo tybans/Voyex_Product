@@ -1,6 +1,6 @@
 const Pagination = ({ currentPage, totalPages, onPageChange }) => {
   return (
-    <div className="flex gap-2 justify-center mt-6">
+    <div className="flex gap-6 justify-center mt-6">
       <button
         disabled={currentPage === 1}
         onClick={() => onPageChange(currentPage - 1)}
@@ -8,7 +8,7 @@ const Pagination = ({ currentPage, totalPages, onPageChange }) => {
       >
         Prev
       </button>
-      <span className="text-sm ">Page {currentPage} of {totalPages}</span>
+      {/* <span className="text-sm ">Page {currentPage} of {totalPages}</span> */}
       <button
         disabled={currentPage === totalPages}
         onClick={() => onPageChange(currentPage + 1)}
