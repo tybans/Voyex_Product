@@ -1,4 +1,4 @@
-import { useContext, Suspense, lazy, useState } from "react";
+import { useContext, Suspense, lazy, useState, useEffect } from "react";
 import { ProductContext } from "../context/ProductContext";
 import Filter from "../components/Filter";
 import Sort from "../components/Sort";
@@ -28,6 +28,10 @@ const Home = () => {
   const endIndex = startIndex + itemsPerPage;
   const paginatedProducts = sorted.slice(startIndex, endIndex);
   const totalPages = Math.ceil(sorted.length / itemsPerPage);
+
+  useEffect(() => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}, [currentPage]); // Scroll to top when page changes
 
   return (
     <div className="p-4 max-w-6xl mx-auto">
